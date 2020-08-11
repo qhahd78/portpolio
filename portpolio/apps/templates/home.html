@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block title%}포트폴리오{%endblock%}
+{%block link%}{% static 'css/home.css' %}{%endblock%}
+
+{% block content %}
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">PORTPOLIO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">포트폴리오</h1>
+      <p>포트폴리오입니다.</p>
+      <p class="github"><a class="btn btn-primary btn-lg" href="https://github.com/qhahd78" role="button">GITHUBPAGE &raquo;</a></p>
+      <p class="github"><a class="btn btn-primary btn-lg" href=" " role="button">자기소개 &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>아이디어톤</h2>
+          <img src="{% static 'image/aaa.jpg' %}" width="300" height="200" alt="image_aaa.jpg">
+        <p>주성분</p>
+        <p><a class="btn btn-secondary" href="http://idea.likelion.org/mypage/detail/100" role="button">LINK &raquo;</a></p>
+      </div>
+    </div>
+    <hr>
+  </div> <!-- /container -->
+</main>
+
+{% endblock %}
